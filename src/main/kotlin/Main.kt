@@ -164,7 +164,7 @@ fun main() {
                            val nombre = readln()
                            val consultasMascota = consultaMedicas.filter { it.mascota.nombre == nombre }
 
-                           // Obtener la última consulta
+                           // .lastOrNull() : Obtener el ultimo elemento de la lista
                            val consultaReciente = consultasMascota.lastOrNull()
 
                            if (consultaReciente != null) {
